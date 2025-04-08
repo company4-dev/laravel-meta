@@ -165,6 +165,8 @@ This functionality is most suited for meta entries that note exceptions to rules
    ];
 ```
 
+> **Note:** Make sure to use lowercase keys.
+
 #### Gotcha
 
 When you extend a model and still want to use the same meta table you must override `getMetaKeyName` function.
