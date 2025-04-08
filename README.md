@@ -363,6 +363,10 @@ unset($post->content);// will not unset meta
 isset($post->content);// will not check if meta exists
 ```
 
+#### Using Original `getAttribute` and `setAttribute` Methods
+
+Laravel meta overrides these Laravel methods for fluent access. If you’ve already disabled fluent access using the method above, these methods' behavior won't change. Otherwise, you can use `getAttributeRaw` and `setAttributeRaw` to access the original methods.
+
 #### Retrieving All Metas
 
 To fetch all metas associated with a piece of content, use the `getMeta` without any params
