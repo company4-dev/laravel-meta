@@ -16,7 +16,7 @@ visit [CHANGELOG.md](CHANGELOG.md)
 
 #### Composer
 
-Laravel can be installed on laravel `8.x` or higher.
+Laravel meta can be installed on laravel `8.x` or higher.
 
 Run:
 
@@ -396,6 +396,14 @@ $post = Post::meta()
           $query->where('posts_meta.key', '=', 'revision')
                 ->where('posts_meta.value', '=', 'draft');
     })
+
+```
+
+Alternatively you can use `whereMeta` scope to simplify your code:
+
+```php
+
+$post = Post::whereMeta($key, $value, $alias = null, $operator = '=')->get();// "alias" and "operator" parameters are optional.
 
 ```
 
