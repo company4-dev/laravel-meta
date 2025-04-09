@@ -420,6 +420,27 @@ trait Metable
 	}
 	
 	/**
+	 * Calls to laravel's getAttribute method.
+	 *
+	 * @param $key
+	 * @return mixed
+	 */
+	public function getAttributeRaw($key) {
+		return parent::getAttribute( $key );
+	}
+	
+	/**
+	 * Calls to laravel's setAttribute method.
+	 *
+	 * @param $key
+	 * @param $value
+	 * @return mixed
+	 */
+	public function setAttributeRaw($key, $value) {
+		return parent::setAttribute( $key, $value );
+	}
+	
+	/**
 	 * Model Override functions
 	 * -------------------------.
 	 */
