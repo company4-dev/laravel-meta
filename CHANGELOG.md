@@ -1,5 +1,17 @@
 # Release Notes
 
+## v2.2.5
+
+### Added
+
+* Added `getAttributeRaw` and `setAttributeRaw` methods
+
+## v2.2.4
+
+### Added
+
+* Added Laravel 12.x Compatibility
+
 ## v2.2.3
 
 ### Added
