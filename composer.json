@@ -1,5 +1,5 @@
 {
-    "name": "kodeine/laravel-meta",
+    "name": "company4-dev/laravel-meta",
     "description": "Fluent Meta Data for Eloquent Models, as if it is a property on your model.",
     "keywords": [
         "laravel",
@@ -11,9 +11,15 @@
         "metable",
         "model",
         "eloquent",
-        "kodeine"
+        "kodeine",
+        "company4"
     ],
     "authors": [
+        {
+            "name": "Jas-n",
+            "homepage": "https://github.com/company4-dev",
+            "role": "Owner"
+        },
         {
             "name": "Ahsen M.",
             "homepage": "https://github.com/kodeine",
@@ -21,10 +27,10 @@
         }
     ],
     "require": {
-        "php": ">=7.3",
-        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/database": "^8.0|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/events": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "php": ">=8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+        "illuminate/events": "^10.0|^11.0|^12.0|^13.0",
         "ext-json": "*"
     },
     "autoload": {
