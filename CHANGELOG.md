@@ -1,5 +1,9 @@
 # Release Notes
 
+## >v2.2.5
+
+[See Releases](https://github.com/company4-dev/laravel-meta/releases)
+
 ## v2.2.5
 
 ### Added
