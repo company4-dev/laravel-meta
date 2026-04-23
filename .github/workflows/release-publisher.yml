@@ -39,6 +39,20 @@ jobs:
           echo "$COMMITS" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
+      - name: Bump version
+        id: version
+        run: |
+            LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "2.2.6")
+
+            # Split version and increment minor version
+            IFS='.' read -r major minor patch <<< "$LAST_TAG"
+            minor=$((minor + 1))
+            NEXT_VERSION="$major.$minor.0"
+
+            echo "Current version: $CURRENT_VERSION"
+            echo "Next version: $NEXT_VERSION"
+            echo "version=$NEXT_VERSION" >> $GITHUB_OUTPUT
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
